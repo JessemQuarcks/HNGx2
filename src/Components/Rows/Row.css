@@ -1,0 +1,30 @@
+/* CSS for Row component */
+.row {
+  /* Your other styles for the row */
+}
+
+/* Flex container for posters */
+.row_posters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Start from the left */
+  gap: -20px; /* Adjust the gap between posters */
+  padding: 10px;
+  justify-content: center;
+  object-fit: cover;
+}
+
+/* Individual poster item */
+.row_posters img {
+  width: 18%; /* Display 5 items in a row on big screens */
+  max-height: 160px fit-content; /* Adjust the maximum height as needed */
+  object-fit: cover;
+  
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .row_posters img {
+    width: 33.33%; /* Display 3 items in a row on medium-sized screens */
+  }
+}
